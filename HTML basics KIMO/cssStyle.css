@@ -1,0 +1,47 @@
+.body {
+    width: 900px;
+    height: 700px;
+    background-color: aqua;
+    display: grid;
+    /* option 1 */
+    /* grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px; */
+    /* option 2 recomended */
+    /* grid-template-columns: repeat(3 ,1fr);
+    grid-template-columns: repeat(3 ,1fr); */
+    /* option 3 */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* justify-items: center;  needs width*/
+    /* place-items: center; needs height too */
+}
+
+.sections {
+    /* height: 90px;
+    width: 90px;  */
+    background-color: blueviolet;
+
+}
+
+.header {
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* or */
+    /* grid-column: 1/span 4; */
+}
+
+.sideMenu {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    /* for indivisual items justify-self is used */
+    /* justify-self: center; needs width*/
+}
+
+.footer {
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

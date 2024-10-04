@@ -1,0 +1,53 @@
+$headingColor: purple;
+$lightOrange:#F18881;
+$headingFontSize:25px;
+$width:90px;
+@mixin imp_textproperties{
+    font-size: 2em;
+    font-weight: 700 bold;
+
+}
+@mixin mandatory-properties{
+    @include imp_textproperties();
+    padding: 5px;
+    background-color: blue !important;
+    margin: 10px;
+    }
+
+h1{
+color: $lightOrange;
+background-color: $headingColor;
+font-size: $headingFontSize;
+width: $width;
+}
+div{
+    .section1{
+        background-color:gray ;
+        p{
+            @include mandatory-properties;
+            color: white;
+            span{
+                color: red;
+                font-size: 20px;
+            }
+        }
+    }
+    h2{
+        color: purple;
+    }
+    ol{
+        display: flex;
+        li{
+           flex-direction: row;
+           margin-left: 25px;
+        }
+    }
+    p{
+        color: yellow;
+        @include mandatory-properties;
+    }
+}
+
+// div>ol{
+
+// }

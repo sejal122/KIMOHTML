@@ -1,0 +1,131 @@
+#firstH1  {
+color: blueviolet;
+
+}
+.div{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+/* .div span {
+    color: red;
+} */
+.div span{
+    color: blueviolet;
+}
+a[href='www.google.com']{
+    font-size: 20px;
+    border: 1px solid blue;
+}
+p[title='dummytext']{
+  padding: 5px;
+  background-color: brown;  
+  color: #fff;
+}
+button{
+    padding: 5px;
+    background-color: blue;
+    color: #fff;
+}
+
+button:hover{
+background-color: #fff;
+color: blue;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+.mainDiv{
+width: 500px;
+height: 500px;
+background-color: aliceblue;
+}
+.mainDiv :first-child{
+    color: blue;
+}
+.mainDiv :last-child{
+    color: red;
+}
+
+.mainDiv :nth-child(3){
+    font-style: italic;
+    font-size: 30px;
+}
+
+p::before{
+content: "/?/";
+
+}
+a[href='www.google.com']::after{
+content: '';
+}
+/* pseudo class and pseudo elements */
+
+.boxModel{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    border: 5px solid red;
+}
+.borderBoxExample{
+    box-sizing: border-box;
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+    margin: 15px;
+    border: 5px solid blue;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.subDiv{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    margin: 5px;
+   
+}
+.cssPositions{
+height: 300px;
+width: 300px;
+background-color: aliceblue;
+position: relative;
+
+}
+.childDiv{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    position: relative;
+    top: 10px;
+}
+.Absolute{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    position: absolute;
+    top :100px;
+    left: 200px;
+}
+.fixed{
+    height: 60px;
+    width: 100px;
+    background-color: yellow;
+    position: fixed;
+    top :0px;
+    width: 100%;
+    left: 00px;
+}
+.sticky{
+    height: 60px;
+    width: 100px;
+    background-color: black;
+    position: sticky;
+    top :20px;
+    width: 100%;
+    left: 00px;
+}

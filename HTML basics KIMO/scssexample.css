@@ -1,0 +1,40 @@
+h1 {
+  color: #F18881;
+  background-color: purple;
+  font-size: 25px;
+  width: 90px;
+}
+
+div .section1 {
+  background-color: gray;
+}
+div .section1 p {
+  font-size: 2em;
+  font-weight: 700 bold;
+  padding: 5px;
+  background-color: blue !important;
+  margin: 10px;
+  color: white;
+}
+div .section1 p span {
+  color: red;
+  font-size: 20px;
+}
+div h2 {
+  color: purple;
+}
+div ol {
+  display: flex;
+}
+div ol li {
+  flex-direction: row;
+  margin-left: 25px;
+}
+div p {
+  color: yellow;
+  font-size: 2em;
+  font-weight: 700 bold;
+  padding: 5px;
+  background-color: blue !important;
+  margin: 10px;
+}/*# sourceMappingURL=scssexample.css.map */

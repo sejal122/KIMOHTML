@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "HTML basics KIMO",
+			"path": "."
+		}
+	],
+	"settings": {
+		"livePreview.defaultPreviewPath": "/cssBasics.html"
+	}
+}

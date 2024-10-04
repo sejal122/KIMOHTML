@@ -1,0 +1,35 @@
+.mainBody{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    background-color: aliceblue;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.section{
+    
+    background-color: purple;
+}
+.header{
+    height: 100px;
+   
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.sideMenu{
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.footer{
+    height: 70px;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 /span 4;
+}
+.right{
+    width: 50px;
+    height: 50px;
+    
+}
